@@ -1,0 +1,7 @@
+@font-face {
+  src: url(Minecraftia-Regular.ttf);
+}
+
+.text {
+  -fx-font-family: Minecraftia;
+}
