@@ -42,6 +42,30 @@ public class Controller{
 
     public void calculate(ActionEvent e){
         play1.play();
+         if(x1.getText().equals("")){
+            sxy.setText("Invalid");
+            calculator.setDisable(false);
+        }
+        if(x2.getText().equals("")){
+            sxy.setText("Invalid");
+            calculator.setDisable(false);
+        }
+        if(y1.getText().equals("")){
+            sxy.setText("Invalid");
+            calculator.setDisable(false);
+        }
+        if(y2.getText().equals("")){
+            sxy.setText("Invalid");
+            calculator.setDisable(false);
+        }
+        if(angle1.getText().equals("")){
+            sxy.setText("Invalid");
+            calculator.setDisable(false);
+        }
+        if(angle2.getText().equals("")){
+            sxy.setText("Invalid");
+            calculator.setDisable(false);
+        }
         double xInput = (Double.parseDouble(x1.getText()));
         double yInput = (Double.parseDouble(y1.getText()));
         double x2Input = (Double.parseDouble(x2.getText()));
