@@ -24,7 +24,7 @@
          <font>
             <Font name="Minecraftia 2.0" size="12.0" />
          </font></TextField>
-      <TextField fx:id="y1" layoutX="14.0" layoutY="409.0" prefHeight="39.0" prefWidth="167.0" promptText="Y1" styleClass="text" stylesheets="@name.css">
+      <TextField fx:id="y1" layoutX="14.0" layoutY="409.0" prefHeight="39.0" prefWidth="167.0" promptText="Z1" styleClass="text" stylesheets="@name.css">
          <font>
             <Font name="Minecraftia 2.0" size="12.0" />
          </font></TextField>
@@ -36,7 +36,7 @@
          <font>
             <Font name="Minecraftia 2.0" size="12.0" />
          </font></TextField>
-      <TextField fx:id="y2" layoutX="256.0" layoutY="409.0" prefHeight="39.0" prefWidth="167.0" promptText="Y2" styleClass="text" stylesheets="@name.css">
+      <TextField fx:id="y2" layoutX="256.0" layoutY="409.0" prefHeight="39.0" prefWidth="167.0" promptText="Z2" styleClass="text" stylesheets="@name.css">
          <font>
             <Font name="Minecraftia 2.0" size="12.0" />
          </font></TextField>
