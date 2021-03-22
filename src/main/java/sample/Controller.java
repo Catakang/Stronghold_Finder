@@ -42,29 +42,17 @@ public class Controller{
 
     public void calculate(ActionEvent e){
         play1.play();
-         if(x1.getText().equals("")){
-            sxy.setText("Invalid");
+          try {
+            Double.isNaN(Double.parseDouble(x1.getText()));
+            Double.isNaN(Double.parseDouble(y1.getText()));
+            Double.isNaN(Double.parseDouble(x2.getText()));
+            Double.isNaN(Double.parseDouble(y2.getText()));
+            Double.isNaN(Double.parseDouble(angle1.getText()));
+            Double.isNaN(Double.parseDouble(angle2.getText()));
+        } catch (NumberFormatException a) {
             calculator.setDisable(false);
-        }
-        if(x2.getText().equals("")){
             sxy.setText("Invalid");
-            calculator.setDisable(false);
-        }
-        if(y1.getText().equals("")){
-            sxy.setText("Invalid");
-            calculator.setDisable(false);
-        }
-        if(y2.getText().equals("")){
-            sxy.setText("Invalid");
-            calculator.setDisable(false);
-        }
-        if(angle1.getText().equals("")){
-            sxy.setText("Invalid");
-            calculator.setDisable(false);
-        }
-        if(angle2.getText().equals("")){
-            sxy.setText("Invalid");
-            calculator.setDisable(false);
+            play1.setMute(true);
         }
         double xInput = (Double.parseDouble(x1.getText()));
         double yInput = (Double.parseDouble(y1.getText()));
@@ -143,6 +131,7 @@ public class Controller{
             }
         };
         play1.setOnEndOfMedia(reset);
+        play1.setMute(false);
         sxy.setText(Math.round(sx * 100.0) / 100.0 + "," + Math.round(sy * 100.0) / 100.0);
         }
 }
