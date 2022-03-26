@@ -4,3 +4,5 @@ You can compile with mvn compile package, package through an ide, or download th
 
 NOTE: When I ran the package function for maven in IntelliJ, It created a jar that worked fine on windows but was slightly broken on mac. I suggest just running 
 mvn compile package.
+
+![Catakang's github stats](https://github-readme-stats.vercel.app/api?username=catakang)
